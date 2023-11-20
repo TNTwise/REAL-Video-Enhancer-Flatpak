@@ -61,7 +61,7 @@ jobs:
         run:  mv REAL-Video-Enhancer-Stable REAL-Video-Enhancer
 
       - name: Install python dependencies
-        run: cd REAL-Video-Enhancer && python3 -m pip install pillow python-magic testresources requests opencv-python-headless pypresence pyuic5-tool cx_FREEZE psutil && sudo apt-get -y install python3-pyqt5 flatpak-builder flatpak && sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && flatpak install --noninteractive  org.kde.Sdk/x86_64/5.15-22.08 && flatpak install --noninteractive  org.kde.Platformk/x86_64/5.15-22.08
+        run: cd REAL-Video-Enhancer && python3 -m pip install pillow python-magic testresources requests opencv-python-headless pypresence pyuic5-tool cx_FREEZE psutil && sudo apt-get -y install python3-pyqt5 flatpak-builder flatpak && sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && sudo flatpak install --noninteractive  org.kde.Sdk/x86_64/5.15-22.08 && sudo flatpak install --noninteractive  org.kde.Platformk/x86_64/5.15-22.08
 
 
       - name: Compile to executable
