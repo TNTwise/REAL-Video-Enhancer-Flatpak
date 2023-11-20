@@ -61,19 +61,19 @@ jobs:
         run:  mv REAL-Video-Enhancer-Stable REAL-Video-Enhancer
 
       - name: Install python dependencies
-        run: cd REAL-Video-Enhancer && python3 -m pip install pillow python-magic testresources requests opencv-python-headless pypresence pyuic5-tool cx_FREEZE psutil && sudo apt-get -y install python3-pyqt5
+        run: cd REAL-Video-Enhancer && python3 -m pip install pillow python-magic testresources requests opencv-python-headless pypresence pyuic5-tool cx_FREEZE psutil && sudo apt-get -y install python3-pyqt5 flatpak-builder
 
       - name: Compile to executable
         run: cd REAL-Video-Enhancer && make
 
       - name: Clone appimage repo
-        run: git clone https://github.com/TNTwise/REAL-Video-Enhancer-AppImage.git
+        run: git clone https://github.com/TNTwise/REAL-Video-Enhancer-Flatpak.git && cp REAL-Video-Enhancer-Flatpak/* .
 
       - name: Move files
-        run: mkdir -p REAL-Video-Enhancer-AppImage/REAL-Video-Enhancer.AppDir/usr/bin/ && mv REAL-Video-Enhancer/dist/* REAL-Video-Enhancer-AppImage/REAL-Video-Enhancer.AppDir/usr/bin/ && mv REAL-Video-Enhancer-AppImage/REAL-Video-Enhancer.AppDir/usr/bin/main REAL-Video-Enhancer-AppImage/REAL-Video-Enhancer.AppDir/usr/bin/REAL-Video-Enhancer      
+        run: mkdir t && mkdir s && mv REAL-Video-Enhancer/dist/PyQt5.uic.widget-plugins t && mv REAL-Video-Enhancer/dist/lib s && ls
 
-      - name: Make appimage
-        run: chmod +x REAL-Video-Enhancer-AppImage/appimagetool-x86_64.AppImage && cd REAL-Video-Enhancer-AppImage/ && ./appimagetool-x86_64.AppImage REAL-Video-Enhancer.AppDir/ 
+      - name: Make flatpak
+        run:  flatpak-builder --repo=repo --force-clean build-dir org.flatpak.Hello.yml
 
 
       - name: Log
