@@ -22,9 +22,6 @@ modules:
       - cp -r PyQt5.uic.widget-plugins/* /app/bin/PyQt5.uic.widget-plugins/
 
     sources:
-      - type: file
-        path: REAL-Video-Enhancer
-      - type: dir
-        path: s
-      - type: dir
-        path: t
+      - type: archive
+        url: https://github.com/TNTwise/REAL-Video-Enhancer-Stable/releases/latest/download//REAL-Video-Enhancer.tar.xz
+        sha256: 3a2b70eb19b67c4831cb61e2f24d461aaa9e0bf65bb39ecc082b1033ed4778b3
