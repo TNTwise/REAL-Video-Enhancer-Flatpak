@@ -72,7 +72,8 @@ jobs:
 
       - name: Move files
         run: mkdir t && mkdir s && mv REAL-Video-Enhancer/dist/PyQt5.uic.widget-plugins t && mv REAL-Video-Enhancer/dist/lib s && ls
-
+      - name: Log
+        run: ls
       - name: Make flatpak
         run:  flatpak-builder --repo=repo --force-clean build-dir org.flatpak.Hello.yml
 
