@@ -1,0 +1,30 @@
+app-id: org.tntwise.REALVideoEnhancer
+runtime: org.kde.Platform
+runtime-version: '5.15-22.08'
+sdk: org.kde.Sdk
+command: REAL-Video-Enhancer
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --share=network
+  - --filesystem=home
+modules:
+  - name: hello
+    buildsystem: simple
+    build-commands:
+      - ls
+      - install -D REAL-Video-Enhancer /app/bin/REAL-Video-Enhancer
+      - mkdir /app/bin/lib/
+      - cp -r lib/* /app/bin/lib/
+      - mkdir /app/bin/PyQt5.uic.widget-plugins/
+      - cp -r PyQt5.uic.widget-plugins/* /app/bin/PyQt5.uic.widget-plugins/
+
+    sources:
+      - type: file
+        path: REAL-Video-Enhancer
+      - type: dir
+        path: s
+      - type: dir
+        path: t
