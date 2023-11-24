@@ -1,3 +1,3 @@
 # REAL-Video-Enhancer-Flatpak
 
-flatpak-builder --user --install --force-clean build-dir io.github.tntwise.REAL-Video-Enhnacer.yml
+sudo flatpak-builder --system --install --force-clean build-dir io.github.tntwise.REAL-Video-Enhancer.yml
