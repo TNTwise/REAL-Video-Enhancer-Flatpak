@@ -1,6 +1,6 @@
 app-id: io.github.tntwise.REAL-Video-Enhancer
 runtime: org.kde.Platform
-runtime-version: '5.15-23.08'
+runtime-version: '6.7'
 sdk: org.kde.Sdk
 command: REAL-Video-Enhancer
 finish-args:
@@ -14,11 +14,9 @@ modules:
   - name: REALVideoEnhancer
     buildsystem: simple
     build-commands:
-      - install -D REAL-Video-Enhancer /app/bin/REAL-Video-Enhancer
+      - install -D main /app/bin/REAL-Video-Enhancer
       - mkdir /app/bin/lib/
       - cp -r lib/* /app/bin/lib/
-      - mkdir /app/bin/PyQt5.uic.widget-plugins/
-      - cp -r PyQt5.uic.widget-plugins/* /app/bin/PyQt5.uic.widget-plugins/
       - install -D io.github.tntwise.REAL-Video-Enhancer.svg -t /app/share/icons/hicolor/scalable/apps
       - install -D io.github.tntwise.REAL-Video-Enhancer.appdata.xml -t /app/share/metainfo
       - install -D io.github.tntwise.REAL-Video-Enhancer.desktop -t /app/share/applications
