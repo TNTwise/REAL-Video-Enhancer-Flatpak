@@ -1,8 +1,8 @@
 [Desktop Entry]
 Exec=REAL-Video-Enhancer
-Icon=io.github.tntwise.REAL-Video-Enhancer
+Icon=io.github.tntwise.REAL-Video-EnhancerV2
 Type=Application
 Categories=AudioVideo
-Name=REAL Video Enhancer
+Name=REAL Video Enhancer V2
 Comment=REAL Video Enhancer is a simple way to enhance videos on Linux.
 Terminal=false

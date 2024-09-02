@@ -20,9 +20,9 @@ modules:
       - mkdir /app/bin/backend
       - cp -r lib/* /app/bin/lib/
       - cp -r backend/* /app/bin/backend/
-      - install -D io.github.tntwise.REAL-Video-Enhancer.svg -t /app/share/icons/hicolor/scalable/apps
-      - install -D io.github.tntwise.REAL-Video-Enhancer.appdata.xml -t /app/share/metainfo
-      - install -D io.github.tntwise.REAL-Video-Enhancer.desktop -t /app/share/applications
+      - install -D io.github.tntwise.REAL-Video-EnhancerV2.svg -t /app/share/icons/hicolor/scalable/apps
+      - install -D io.github.tntwise.REAL-Video-EnhancerV2.appdata.xml -t /app/share/metainfo
+      - install -D io.github.tntwise.REAL-Video-EnhancerV2.desktop -t /app/share/applications
 
 
     sources:
@@ -35,6 +35,6 @@ modules:
 
 
       - type: file
-        path: io.github.tntwise.REAL-Video-Enhancer.desktop
+        path: io.github.tntwise.REAL-Video-EnhancerV2.desktop
       - type: file
-        path: io.github.tntwise.REAL-Video-Enhancer.appdata.xml
+        path: io.github.tntwise.REAL-Video-EnhancerV2.appdata.xml
