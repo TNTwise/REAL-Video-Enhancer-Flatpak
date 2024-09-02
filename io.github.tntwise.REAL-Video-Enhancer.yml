@@ -15,7 +15,7 @@ modules:
   - name: REALVideoEnhancer
     buildsystem: simple
     build-commands:
-      - install -Dm755 main /app/bin/REAL-Video-Enhancer
+      - install -Dm755 REAL-Video-Enhancer /app/bin/REAL-Video-Enhancer
       - mkdir /app/bin/lib/
       - mkdir /app/bin/backend
       - cp -r lib/* /app/bin/lib/
@@ -27,8 +27,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/TNTwise/REAL-Video-Enhancer/releases/download/prerelease_2.0/REAL-Video-Enhancer-2.0-Flatpak.zip
-        sha256: b6410cbb6233b8e14b6de8dc98c7f365345c9bffafe4987b0cc28676093504cf
+        url: https://github.com/TNTwise/REAL-Video-Enhancer/releases/download/REAL_Video_Enhancer_2.0_Alpha/REAL-Video-Enhancer-2.0-Linux.zip
+        sha256: 750adb00a49aff5a04e31146646d6126e4399b16abe1571052da8a6bbb9618fb
       - type: file
         url: https://raw.githubusercontent.com/TNTwise/REAL-Video-Enhancer/8c2e46e1f65406f0ff719b8f7fda93421bf37aa3/icons/io.github.tntwise.REAL-Video-Enhancer.svg
         sha256: f84b7f92a2663a53409d65276c81e685a3dc43505f86844916465ff91f26d11c
