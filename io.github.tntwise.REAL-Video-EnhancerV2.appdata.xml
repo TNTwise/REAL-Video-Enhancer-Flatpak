@@ -23,17 +23,22 @@
  <url type="donation">https://ko-fi.com/tntwise</url>
  <screenshots>
   <screenshot type="default">
-   <image>https://github.com/TNTwise/REAL-Video-Enhancer/blob/c6e4320ba09ddd1b2275fde823c27f47b8048c34/icons/demo.png</image>
+   <image>https://github.com/TNTwise/REAL-Video-Enhancer/blob/75fd44b77925480d3a10345ffa1974085ce543bb/screenshots/demo.png</image>
+  </screenshot>
+  <screenshot type="default">
+   <image>https://github.com/TNTwise/REAL-Video-Enhancer/blob/75fd44b77925480d3a10345ffa1974085ce543bb/screenshots/models.png</image>
+  </screenshot>
+  <screenshot type="default">
+   <image>https://github.com/TNTwise/REAL-Video-Enhancer/blob/75fd44b77925480d3a10345ffa1974085ce543bb/screenshots/settings.png</image>
   </screenshot>
  </screenshots>
  <content_rating type="oars-1.1"/>
  <releases>
-  <release version="2.0" date="2024-09-01">
+  <release version="2.0.5" date="2024-09-01">
    <description>
     <ul>
        <li> Whole new interface.</li>
        <li> Unified feature set.</li>
-       <li> CUDA/TRT support</li>
     </ul>
    </description>
   </release>
